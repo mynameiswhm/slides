@@ -1,0 +1,20 @@
+.reveal {
+    font-size: 32px !important;
+}
+
+.reveal, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6  {
+    font-family: Lato, Arial, sans-serif !important;
+    text-transform: none;
+}
+
+.reveal .slides {
+    text-align: left;
+}
+.reveal .slides section>* {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer {
+    display: none !important;
+}

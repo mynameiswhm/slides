@@ -354,7 +354,7 @@ type Exif struct {
 
 [goast.yuroyoro.net](http://goast.yuroyoro.net/)
 
-![goast](./assets/md/assets/goast.png)
+![goast](assets/goast.png)
 
 +++
 

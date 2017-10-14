@@ -715,5 +715,7 @@ func foo(a, b, c, d string)
 
 Илья Сауленко, Avito
 
+https://gitpitch.com/mynameiswhm/slides/code-generation-in-go
+
 - [hi@mynameiswhm.ru](mailto:hi@mynameiswhm.ru)
 - [@mynameiswhm](https://twitter.com/mynameiswhm)

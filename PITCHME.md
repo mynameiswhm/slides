@@ -119,20 +119,20 @@
 
 ```go
 type Exif struct {
-	Gps     *Gps       `json="gps,omitempty"`
-	Camera  *Camera    `json="camera,omitempty"`
-	Created *time.Time `json="created,omitempty"`
+	Gps     *Gps       `json:"gps,omitempty"`
+	Camera  *Camera    `json:"camera,omitempty"`
+	Created *time.Time `json:"created,omitempty"`
 }
 
 type Camera struct {
-	Make  *string `json="make,omitempty"`
-	Model *string `json="model,omitempty"`
+	Make  *string `json:"make,omitempty"`
+	Model *string `json:"model,omitempty"`
 }
 
 type Gps struct {
-	Coordinates *Coordinates `json="coordinates,omitempty"`
-	Country     *string      `json="country,omitempty"`
-	City        *string      `json="gps,omitempty"`
+	Coordinates *Coordinates `json:"coordinates,omitempty"`
+	Country     *string      `json:"country,omitempty"`
+	City        *string      `json:"gps,omitempty"`
 }
 
 type Coordinates *[2]float32
@@ -293,9 +293,9 @@ func merge(dst, src reflect.Value) error {
 
 ```go
 type Exif struct {
-	Gps     *Gps       `json="gps,omitempty"`
-	Camera  *Camera    `json="camera,omitempty"`
-	Created *time.Time `json="created,omitempty",merge="replace"`
+	Gps     *Gps       `json:"gps,omitempty"`
+	Camera  *Camera    `json:"camera,omitempty"`
+	Created *time.Time `json:"created,omitempty",merge:"replace"`
 }
 ```
 
@@ -547,10 +547,10 @@ func Source(src []byte) ([]byte, error)
 Ок, код написали, но как его запускать?
 
 ```bash
-go format ./...
+go generate ./...
 ```
 
-`go format` просто делает exec:
+`go generate` просто делает exec:
 
 ```go
 package main
